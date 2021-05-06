@@ -9,3 +9,11 @@ body{
     font: normal normal 2em monospace;
     color: #ffffff;
 }
+section{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+.centrohp{
+    text-align: center;
+}
