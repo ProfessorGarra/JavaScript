@@ -12,8 +12,16 @@ body{
 section{
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 5px;
+    margin: 10px;
+
 }
 .centrohp{
     text-align: center;
 }
+.left{
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
