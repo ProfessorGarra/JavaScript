@@ -14,19 +14,36 @@
     <article class="centrohp">
         <h1>Olá mundo!</h1>
         <p>Testando o JS</p>
+        <ul>
+            <li>+ concatena e adiciona.</li>
+            <li>para adicionar precisamos number + number.</li>
+            <li>para concatenar precisamos de string + string.</li>
+            <li>Number.parseFloat()  é usado para converter qualquer string números reais.</li>
+            <li>Number.parseInt()  é usado para converter qualquer string números inteiros.</li>
+            <li>Number() é usado para converter qualquer string em número.</li>
+            <li>Para converter de número pra string, usamos String() ou usamos n.toString()</li>
+            <li>Template string inicia com crase ´,segue por ${} e encerra com crase ` e ajuda a concaternar melhor os comandos.</li>
+
+        </ul>
+        
+        
+        
+        
+       
+       
     </article>
 
     <script>
-        var n1= Number.parseInt(prompt("digite um número x"))// prompt sempre retorna uma string , mesmo que digite um número. Iremos converter o prompt para number usando Number.parseInt
-        var n2=Number.parseInt(prompt("digite outro número y diferente de x"))
+        var n1= Number(prompt("digite um número x"))// prompt sempre retorna uma string , mesmo que digite um número. Iremos converter o prompt para number usando Number.parseInt
+        var n2=Number(prompt("digite outro número y diferente de x"))
         var s=n1+n2
-        alert("A soma dos valores é "+s)
-        //+ concatena e adiciona
-        // para adicionar precisamos number + number
-        // para concatenar precisamos de string + string
-        //Number.parseInt()  é usado para números inteiros
-        ////Number.parseFloat()  é usado para números reais
-        //number() é usado para qualquer número
+        alert(`A adição de ${n1} e ${n2} é igual a ${s}`)
+        //+ concatena e adiciona.
+        // para adicionar precisamos number + number.
+        // para concatenar precisamos de string + string.
+        //Number.parseInt()  é usado para números inteiros.
+        ////Number.parseFloat()  é usado para números reais.
+        //number() é usado para qualquer número.
     </script>
 </body>
 
