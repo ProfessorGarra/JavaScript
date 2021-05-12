@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../../HTML-CSS/CURSO DO GUSTAVO HTML CSS3/img/garra.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>JavaScript</title>
+</head>
+
+<body>
+    <article class="centrohp">
+        <h1>Olá mundo!</h1>
+        <p>Testando o JS</p>
+    </article>
+
+    <script>
+        
+        
+        var nome = prompt('Informe o nome do candidato', 'Digite aqui')
+        var idade = prompt('Informe a idade do candidato', 'Digite aqui')
+        var relacionamento = prompt('Informe se é casado ou solteiro', 'Digite aqui')
+
+        if (parseInt(idade) >= 18) {
+            alert(`O candidato ${nome} está apto à iniciar o processo`)
+        } else {
+            alert(`O candidato ${nome} não está apto à iniciar o processo`)
+        }
+
+        if ((relacionamento)=='casado') {
+            alert(`O ${nome} esta em uma vida conjugal`)
+        } else {
+            alert(`O  ${nome} deve ser sozinho  e triste, certamente cuida de algum animal pra suprir o vazio...`)
+        }
+    </script>
+</body>
+
+</html>
