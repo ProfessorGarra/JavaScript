@@ -1,0 +1,32 @@
+
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/garra.ico" type="image/x-icon">
+    <source><script src="jscript.js"></script>
+    <title>Primeiros passos com Dom</title>
+</head>
+<body>
+    <h1>iniciando estudos com DOM</h1>
+    <p>Aqui vai uma div</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div id="msg">clique em mim</div>
+    <script>
+        let p1 = window.document.getElementsByTagName('p')[1];
+        window.document.write('Está escrito assim: '+ p1.innerText);
+        p1.style.color = 'red';
+        document.write(" porém formatada "+ p1.innerHTML);
+        let p2 = window.document.getElementsByTagName('p')[0];
+        alert(p2.innerText);
+        let d1=document.getElementById('msg');
+        d1.style.background='pink';
+        d1.style.color='black';
+        d1.innerText='Modifiquei o conteúdo da div pelo DOM'
+    </script>
+
+</body>
+</html>
