@@ -1,8 +1,9 @@
 @charset "UTF-8";
-html,body{
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    background-color: #4b4bc0;
-    color: #ffffff;
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  background-color: #4b4bc0;
+  color: #ffffff;
 }
