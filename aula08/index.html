@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="img/garra.ico" type="image/x-icon">
+    <script src="scrpt.js"></script>
+    <title>Eventos DOM</title>
+</head>
+
+<body>
+    <div id="area">Interaja</div>
+    <script>
+        let a1 = document.getElementById("area");
+        a1.addEventListener('click', clicar)
+        a1.addEventListener('mouseenter', entrar)
+        a1.addEventListener('mouseout', sair)
+
+        function clicar() {
+
+            a1.innerText = "Clicou mudou!";
+            a1.style.background = 'blue'
+        }
+
+        function entrar() {
+            a1.innerText = "Entrou gostoso!";
+        }
+
+        function sair() {
+            a1.innerText = "Saiu rasgando!";
+            a1.style.background = '#8a2be2'
+        }
+    </script>
+    
+</body>
+
+</html>
