@@ -4,3 +4,4 @@ document.write(" - ");
 document.write(window.navigator.appName);
 document.write(" - ");
 window.alert("Retomando os estudos em DOM"); //Não precisa de window.
+alert('O que está achando até agora ?');
