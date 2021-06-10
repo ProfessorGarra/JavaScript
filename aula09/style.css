@@ -1,0 +1,25 @@
+@charset "UTF-8";
+html,
+body {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+h1{
+    text-align: center ;
+}
+#barra{
+    width: 415px;
+    margin-left: auto;
+    margin-right: auto;
+}
+#res{
+    width: 415px;
+    border: solid 1px #0000ff;
+    background-color: cornflowerblue;
+    margin-top: 25px;
+    margin-left: auto;
+    margin-right: auto;
+    font-weight: bolder;
+
+}
