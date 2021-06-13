@@ -4,23 +4,29 @@ let myBook= {
     editora: ' Seekers ',
     titulo:' Legado sombrio ',
 }
-let bookTitulo = document.write(myBook.titulo);
-let bookAutor = document.write(myBook.autor);
-let bookPagina = document.write(myBook.pagina);
-let bookEditora = document.write(myBook.editora);
+// let bookTitulo = document.write(myBook.titulo);
+// let bookAutor = document.write(myBook.autor);
+// let bookPagina = document.write(myBook.pagina);
+// let bookEditora = document.write(myBook.editora);
+
+// function pesquisar() {
+//     let tn1=document.querySelector('input#txt');
+//     let n1=String(tn1.value);
+//     let res=document.getElementById('res');
+    
+    
+//     res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
+    
+// }
+
+
 
 function pesquisar() {
-    let tn1=document.querySelector('input#txt');
+    let tn1=document.querySelector("input#txt");
     let n1=String(tn1.value);
-    let res=document.getElementById('res');
-    
-    
-    res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
-    
-}
+    let res = document.getElementById("res");
 
-
-if(n1==myBook){document.write();}else(res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `);
+    if(n1==myBook){document.write();}else(res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `);
 if (n1 == autor) {
   document.write(myBook.autor);
 }
@@ -37,10 +43,5 @@ if (n1 == titulo) {
     `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
   );
 }
-function pesquisar() {
-    let tn1=document.querySelector("input#txt");
-    let n1=String(tn1.value);
-    let res = document.getElementById("res");
-
-  res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
+//   res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
 }
