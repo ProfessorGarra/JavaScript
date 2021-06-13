@@ -7,3 +7,4 @@ function somar() {
     let soma= n1+n2 ;
     res.innerHTML = `A  adição entre  ${n1} e ${n2} resulta em soma igual a <strong> ${soma}</strong>`
 }
+
