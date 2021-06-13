@@ -26,22 +26,18 @@ function pesquisar() {
     let n1=String(tn1.value);
     let res = document.getElementById("res");
 
-    if(n1==myBook){document.write();}else(res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `);
-if (n1 == autor) {
-  document.write(myBook.autor);
+    if(n1==myBook){document.write(console.log.myBook);}else(res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `);
 }
-if (n1 == pagina) {
-  document.write(myBook.pagina);
-}
-if (n1 == editora) {
-  document.write(myBook.editora);
-}
-if (n1 == titulo) {
-  document.write(myBook.titulo);
-} else {
-  res.innerHTML(
-    `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
-  );
-}
-//   res.innerHTML = `O nome que você pesquisou é  ${n1} e o resultado  não foi localizado `
-}
+
+// if (n1==autor) {
+    //   document.write(myBook.autor);
+
+// if (n1==pagina) {
+//   document.write(myBook.pagina);
+// }
+// if (n1==editora) {
+//   document.write(myBook.editora);
+// }
+// if (n1==titulo) {
+//   document.write(myBook.titulo);
+// } 
