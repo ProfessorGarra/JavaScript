@@ -4,6 +4,19 @@ let myBook= {
     editora: ' Seekers ',
     titulo:' Legado sombrio ',
 }
+class aulas{
+    constructor(curso, modalidade, professor, turma, alunos ){
+        this.curso=curso;
+        this.modalidade=modalidade;
+        this.professor=professor;
+        this.turma=turma;
+        this.alunos=alunos;
+    }
+}
+let aula1=new aulas('matemática' , 'EAD' , 'Garra' , 'Cálculo' , 53 );
+let aula2=new aulas('português' , 'Presencial' , 'Gramática' , 50 );
+let aula3=new aulas('Física' , 'EAD' , 'Wands' , 'Termologia' , 49 );
+let aula4=new aulas('Filosofia' , 'presencial' , 'Paulo' , 'Metafísica' , 47);
 // let bookTitulo = document.write(myBook.titulo);
 // let bookAutor = document.write(myBook.autor);
 // let bookPagina = document.write(myBook.pagina);
