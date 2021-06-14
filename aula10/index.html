@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css?family=Roboto+Slab" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
     <script src="script.js"></script>
     <title>Objetos</title>
@@ -12,11 +13,66 @@
 
 <body>
     <div id="obj">
-<input type="text" name="txt" id="txt">
-<input type="button" value="pesquisar" onclick="pesquisar()">
-<div id="res">Resultado da pesquisa</div>
+        <input type="text" name="txt" id="txt">
+        <input type="button" value="Pesquisar" onclick="pesquisar()">
+        <div id="res">Resultado da pesquisa</div>
     </div>
 
+    <div class="series-frame">
+        <h2>Um curso completo de Cálculo:</h2>
+        <p id="first-episode-info"></p>
+    </div>
+
+    <div class="series-frame">
+        <h2>Um curso completo de Gramática:</h2>
+        <p id="second-episode-info"></p>
+    </div>
+
+    <div class="series-frame">
+        <h2>Um curso completo de Física:</h2>
+        <p id="third-episode-info"></p>
+    </div>
+
+    <div class="series-frame">
+        <h2>Um curso completo de Filosofia:</h2>
+        <p id="fourth-episode-info"></p>
+    </div>
+
+    <script>
+        class Episode {
+            constructor(title, duration, hasBeenWatched) {
+                this.title = title;
+                this.duration = duration;
+                this.hasBeenWatched = hasBeenWatched;
+            }
+        }
+
+        let firstEpisode = new Episode('Dark Beginnings', 45, true);
+        let secondEpisode = new Episode('The Mystery Continues', 45, false);
+        let thirdEpisode = new Episode('The Unexpected Climax', 60, false);
+
+        // =====================================
+
+        document.querySelector('#first-episode-info').innerText = `Episode: ${firstEpisode.title}
+        Duration: ${firstEpisode.duration} min
+        ${firstEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+
+        document.querySelector('#second-episode-info').innerText = 
+        `Curso: ${secondEpisode.title}
+        Modalidade: ${secondEpisode.title}
+        Professor: ${secondEpisode.title}
+        Turma: ${secondEpisode.duration} min
+        Alunos: ${secondEpisode.duration} min
+        ${secondEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+
+        document.querySelector('#third-episode-info').innerText = `Episode: ${thirdEpisode.title}
+  Duration: ${thirdEpisode.duration} min
+  ${thirdEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+
+        document.querySelector('#fourth-episode-info').innerText = `Episode: ${thirdEpisode.title}
+  Duration: ${thirdEpisode.duration} min
+  ${thirdEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+    </script>
 </body>
 
 </html>
