@@ -19,59 +19,75 @@
     </div>
 
     <div class="series-frame">
-        <h2>Um curso completo de Cálculo:</h2>
+        <h2>Curso completo de Cálculo:</h2>
         <p id="first-episode-info"></p>
     </div>
 
     <div class="series-frame">
-        <h2>Um curso completo de Gramática:</h2>
+        <h2>Curso completo de Gramática:</h2>
         <p id="second-episode-info"></p>
     </div>
 
     <div class="series-frame">
-        <h2>Um curso completo de Física:</h2>
+        <h2>Curso completo de Física:</h2>
         <p id="third-episode-info"></p>
     </div>
 
     <div class="series-frame">
-        <h2>Um curso completo de Filosofia:</h2>
+        <h2>Curso completo de Filosofia:</h2>
         <p id="fourth-episode-info"></p>
     </div>
 
     <script>
         class Episode {
-            constructor(title, duration, hasBeenWatched) {
-                this.title = title;
-                this.duration = duration;
-                this.hasBeenWatched = hasBeenWatched;
+            constructor(curso, modalidade, professor,turma, alunos, matriculado) {
+                this.curso = curso;
+                this.modalidade = modalidade;
+                this.professor = professor;
+                this.turma = turma;
+                this.alunos = alunos;
+                this.matriculado = matriculado;
             }
         }
 
-        let firstEpisode = new Episode('Dark Beginnings', 45, true);
-        let secondEpisode = new Episode('The Mystery Continues', 45, false);
-        let thirdEpisode = new Episode('The Unexpected Climax', 60, false);
+        let firstEpisode = new Episode('Cálculo.','EaD', 'Garra', 'A', 55, true);
+
+        let secondEpisode = new Episode('Gramática aplicada ao texto.','EaD', 'Barbara', 'A', 51, false);
+
+        let thirdEpisode = new Episode('Física','EaD', 'Wanderson', 'C', 50, true);
+
+        let fourthEpisode = new Episode('Filosofia','Presencial', 'Paulo', 'D', 49, false);
 
         // =====================================
 
-        document.querySelector('#first-episode-info').innerText = `Episode: ${firstEpisode.title}
-        Duration: ${firstEpisode.duration} min
-        ${firstEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+        document.querySelector('#first-episode-info').innerText = `Curso: ${firstEpisode.curso}
+        Modalidade: ${firstEpisode.modalidade}
+        Professor: ${firstEpisode.professor}
+        Turma: ${firstEpisode.turma}
+        Alunos: ${firstEpisode.alunos}
+        Matriculado: ${firstEpisode.matriculado ? 'Sim' : 'Não'}`;
 
         document.querySelector('#second-episode-info').innerText = 
-        `Curso: ${secondEpisode.title}
-        Modalidade: ${secondEpisode.title}
-        Professor: ${secondEpisode.title}
-        Turma: ${secondEpisode.duration} min
-        Alunos: ${secondEpisode.duration} min
-        ${secondEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+        `Curso: ${secondEpisode.curso}
+        Modalidade: ${secondEpisode.modalidade}
+        Professor: ${secondEpisode.professor}
+        Turma: ${secondEpisode.turma}
+        Alunos: ${secondEpisode.alunos}
+        Matriculado: ${secondEpisode.matriculado ? 'Sim' : 'Não'}`;
 
-        document.querySelector('#third-episode-info').innerText = `Episode: ${thirdEpisode.title}
-  Duration: ${thirdEpisode.duration} min
-  ${thirdEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+        document.querySelector('#third-episode-info').innerText = `Curso: ${thirdEpisode.curso}
+        Modalidade: ${thirdEpisode.modalidade}
+        Professor: ${thirdEpisode.professor}
+        Turma: ${thirdEpisode.turma}
+        Alunos: ${thirdEpisode.alunos}
+        Matriculado: ${thirdEpisode.matriculado ? 'Sim' : 'Não'}`;
 
-        document.querySelector('#fourth-episode-info').innerText = `Episode: ${thirdEpisode.title}
-  Duration: ${thirdEpisode.duration} min
-  ${thirdEpisode.hasBeenWatched ? 'Already watched' : 'Not yet watched'}`;
+        document.querySelector('#fourth-episode-info').innerText = `Curso: ${fourthEpisode.curso}
+        Modalidade: ${fourthEpisode.modalidade}
+        Professor: ${fourthEpisode.professor}
+        Turma: ${fourthEpisode.turma}
+        Alunos: ${fourthEpisode.alunos}
+        Matriculado: ${fourthEpisode.matriculado ? 'Sim' : 'Não'}`;
     </script>
 </body>
 
