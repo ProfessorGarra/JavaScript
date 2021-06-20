@@ -10,6 +10,12 @@ body {
   color: #eee;
   font-family: "Roboto Slab", serif;
 }
+#obj{
+  margin: 30px;
+}
+#res{
+  margin-top: 10px ;
+}
 
 .series-frame {
   max-width: 650px;
