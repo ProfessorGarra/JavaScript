@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="img/garra.ico" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+    <title>Switch Case5</title>
+    <!-- <script src="script.js" defer ></script> -->
+</head>
+
+<body>
+    <p>O que é o que é?</p>
+
+    <script>
+        let number = prompt('Digite um número entre 1 e 3', 'Digite aqui');
+        if (number == 1) {
+            document.write('Você digitou o número 01! ')
+        } else if (number == 2) {
+            document.write('Você digitou o número 02! ')
+        } else if (number == 3) {
+            document.write('Você digitou o número 03! ')
+        } else {
+            document.write(' Sabe ler não? Abestado!')
+        }
+
+        let letter = prompt('Digite uma das cinco primeiras letras do alfabeto', 'Digite aqui');
+        switch (letter) {
+            case 'a':
+                document.write('Você digitou a letra a. 6');
+                break;
+            case 'b':
+                document.write('Você digitou a letra b. 6');
+                break;
+            case 'c':
+                document.write('Você digitou a letra c. 6');
+                break;
+            case 'd':
+                document.write('Você digitou a letra d. 6');
+                break;
+            case 'e':
+                document.write('Você digitou a letra e. 6');
+                break;
+            default:
+                document.write(' Sabe as letras não? Abestado!!!');
+                break
+        }
+        let data = new Date();
+        let diaDaSemana = data.getDay();
+        let diaDaSemanaExtenso;
+        switch (diaDaSemana) {
+            case 1:
+                diaDaSemanaExtenso = '  é Domingo!';
+                break;
+            case 2:
+                diaDaSemanaExtenso = '  é Segunda!';
+            case 3:
+                diaDaSemanaExtenso = '  é Terça!';
+                break;
+            case 4:
+                diaDaSemanaExtenso = '  é Quarta!';
+                break;
+            case 5:
+                diaDaSemanaExtenso = '  é Quinta!';
+                break;
+            case 6:
+                diaDaSemanaExtenso = '  é Sexta!';
+                break;
+            default:77
+                diaDaSemanaExtenso = '  é Sábado!';
+                break;
+        }
+                document.write('Hoje é'+diaDaSemanaExtenso+".");
+    </script>
+</body>
+
+</html>
