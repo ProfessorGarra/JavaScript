@@ -20,7 +20,8 @@ body {
 .series-frame {
   max-width: 650px;
   display: flex;
-  align-items:stretch;
+  align-items:center;
+  justify-content: space-between;
   
   border: 2px solid #eee;
   margin: 30px;
